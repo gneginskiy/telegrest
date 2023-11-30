@@ -1,4 +1,4 @@
-Telegrest: send Telegram messages via REST API
+Telegrest: REST API for sending Telegram messages
 ========
 .. epigraph::
 
