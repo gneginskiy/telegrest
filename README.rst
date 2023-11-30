@@ -5,7 +5,8 @@ Telegrest
   ⭐️ Thanks **everyone** who has starred the project, it means a lot!
 
 **Telegrest** is a simple REST application which allows you to seamlessly send telegram notifications (text messages as well as files) via REST API endpoints.
-The application is built upon telethon, and packaged as a docker image, so you would be able to run it anywhere with little to no pain. 
+The application is built upon Telethon library, and packaged as a docker image, so you would be able to run it anywhere with little to no pain. 
+Telegrest does not use Telegram Bot API, it uses regular  client instead. 
 
 What is this?
 -------------
