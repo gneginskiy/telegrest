@@ -86,5 +86,5 @@ To send text and files to "saved messages", just specify ``me`` as a username:
 
   {
       "username":"me",
-      "message":"reminder to myself"
+      "message":"reminder message for myself"
   }
