@@ -46,7 +46,7 @@ Doing stuff
 For now, there are 2 enpoints, one for sending text messages, and another for sending files. 
 
 1. Sending messages
-``http://localhost:5001/send_message``
+**POST** ``http://localhost:5001/send_message``
 
 .. code-block:: json
 
@@ -67,7 +67,7 @@ For "username" field you can use the phone number as well as the actual telegram
 
 2. sending files: 
 
-``http://localhost:5001/send_file``
+**POST** ``http://localhost:5001/send_file``
 
 .. code-block:: json
 
