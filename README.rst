@@ -31,6 +31,7 @@ Installing
 8. Run the application from terminal/command line, providing the *auth string* you got during the previous step:
 
 .. code-block:: sh
+
   docker run \
   -p 5001:5001 \
   -e TELEGREST_AUTH=%YOUR_AUTH_STRING_HERE% \
