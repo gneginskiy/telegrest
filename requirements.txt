@@ -1,0 +1,4 @@
+uvicorn==0.24.0
+asgiref==3.3.2
+Flask==3.0.0
+telethon==1.32.1
