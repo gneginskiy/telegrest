@@ -38,6 +38,7 @@ Installing
   -e TELEGREST_AUTH=%YOUR_AUTH_STRING_HERE% \
   gneginskiy/telegrest:1.0
 
+9. Do not share your auth string with anybody.
 
 Doing stuff
 -----------
