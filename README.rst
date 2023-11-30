@@ -40,7 +40,7 @@ Installing
 
 Doing stuff
 -----------
-For now, there are 2 enpoints, one for sending text messages, and another for sending files. 
+For now, there are 2 endpoints, one for sending text messages, and another for sending files. 
 
 1. Sending messages
 
