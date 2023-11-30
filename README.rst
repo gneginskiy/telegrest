@@ -46,6 +46,7 @@ Doing stuff
 For now, there are 2 enpoints, one for sending text messages, and another for sending files. 
 
 1. Sending messages
+
 **POST** ``http://localhost:5001/send_message``
 
 .. code-block:: json
