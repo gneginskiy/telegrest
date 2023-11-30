@@ -18,6 +18,7 @@ Installing
 ----------
 0. Install docker ( https://docs.docker.com/engine/install/ )
 1. Run the application from terminal/command line in interactive mode: 
+
 .. code-block:: sh
   
   docker run -it gneginskiy/telegrest:1.0
