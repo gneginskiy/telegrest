@@ -22,7 +22,7 @@ Installing
   docker run -it gneginskiy/telegrest:1.0
 
 2. Enter your api_id (e.g. 23491234). You can get it from https://my.telegram.org/apps
-3. Enter your api_hash (e.g. 810a8615724f34f40676c2cab8d5a609). You can get it from https://my.telegram.org/apps
+3. Enter your api_hash (e.g. 810a8615724f34f40676c2cab8d5b609). You can get it from https://my.telegram.org/apps
 4. Enter you phone using international format (e.g. +79660354444)
 5. Then, telegram will send you a confirmation code. Enter your confirmation code as well.
 6. As an additional measure, telegram client can ask you for a password. Enter it as well.
