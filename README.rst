@@ -1,61 +1,40 @@
-# Telegrest
-REST api gateway for sending telegram notifications
-
-# Description
-The application allows you to send telegram text messages and files via REST api.
-The only thing is needed to start is docker
-
-# Getting started
-tbd
-```
-tbd command
-```
-
-
-# Endpoints
-http://127.0.0.1:5001/send_file
-
-.. code-block:: json
-
-```
-
-
-```
-
-
-Telethon
+Telegrest
 ========
 .. epigraph::
 
   ⭐️ Thanks **everyone** who has starred the project, it means a lot!
 
-|logo| **Telethon** is an asyncio_ **Python 3**
-MTProto_ library to interact with Telegram_'s API
-as a user or through a bot account (bot API alternative).
-
-.. important::
-
-    If you have code using Telethon before its 1.0 version, you must
-    read `Compatibility and Convenience`_ to learn how to migrate.
-    As with any third-party library for Telegram, be careful not to
-    break `Telegram's ToS`_ or `Telegram can ban the account`_.
+**Telegrest** is a simple REST application which allows you to seamlessly send telegram notifications (text messages as well as files) via REST API endpoints.
+The application is built upon telethon, and packaged as a docker image, so you would be able to run it anywhere with little to no pain. 
 
 What is this?
 -------------
-
-Telegram is a popular messaging application. This library is meant
-to make it easy for you to write Python programs that can interact
-with Telegram. Think of it as a wrapper that has already done the
-heavy job for you, so you can focus on developing an application.
+Telegram is a popular messaging application. This app is meant
+to make it easy for you to write programs that can send Telegram 
+notification via REST.
 
 
 Installing
 ----------
-
+0. Install docker ( https://docs.docker.com/engine/install/ )
+1. Run the application from terminal/command line in interactive mode: 
 .. code-block:: sh
 
-  pip3 install telethon
+  docker run -it gneginskiy/telegrest:1.0
 
+2. Enter your api_id (e.g. 23491234). You can get it from https://my.telegram.org/apps
+3. Enter your api_hash (e.g. 810a8615724f34f40676c2cab8d5a609). You can get it from https://my.telegram.org/apps
+4. Enter you phone using international format (e.g. +79660354444)
+5. Then, telegram will send you a confirmation code. Enter your confirmation code as well.
+6. As an additional measure, telegram client can ask you for a password. Enter it as well.
+7. After you provided all the required information, the application will print *auth string*. Save it, you'll need it soon.
+8. Run the application from terminal/command line, providing the *auth string* you got during the previous step:
+
+.. code-block:: sh
+  docker run \
+  -p 5001:5001 \
+  -e TELEGREST_AUTH=%YOUR_AUTH_STRING_HERE% \
+  gneginskiy/telegrest:1.0
 
 Creating a client
 -----------------
