@@ -67,6 +67,8 @@ For "username" field you can use the phone number as well as the actual telegram
 
 **POST** ``http://localhost:5001/send_file``
 
+for ``data`` field base64 is used.
+
 .. code-block:: json
 
   {
