@@ -7,8 +7,8 @@ from src.util import AUTH_DELIMITER, to_base64
 
 
 def telegrest_authorize():
-    api_id = int(getInputFromKeyboard('api_id'))
-    api_hash = getInputFromKeyboard('api_hash')
+    api_id = int(getInputFromKeyboard('api_id (can be taken from https://my.telegram.org/apps )'))
+    api_hash = getInputFromKeyboard('api_hash (can be taken from https://my.telegram.org/apps )')
     tmp_client = TelegramClient(None, api_id, api_hash).start()
     auth_str = str(api_id) + AUTH_DELIMITER + api_hash + AUTH_DELIMITER + StringSession.save(tmp_client.session)
     auth_str = to_base64(auth_str)
