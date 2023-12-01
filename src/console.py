@@ -3,9 +3,9 @@ import sys
 
 
 def printAuthStr(auth_str):
-    print('\n\nBelow is your auth string ⬇️\n\n')
+    print('\n\nBelow is your telegrest auth string ⬇️\n\n')
     print(auth_str)
-    print('\nAbove is your session string ⬆️\n\n')
+    print('\nAbove is your telegrest auth string ⬆️\n\n')
     print('''
     - Keep this string safe! Dont leak it.
     - Anyone with this string can use it to login into your account and do anything they want to to do.

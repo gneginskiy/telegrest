@@ -11,6 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5001
 # Set PYTHONPATH to app/src/
 ENV PYTHONPATH /app/
-# Run app.py when the container launches
+# Run src/main.py when the container launches
 CMD ["python", "src/main.py"]
 
