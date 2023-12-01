@@ -96,3 +96,10 @@ Important note
 -----------
 1. The TELEGREST_AUTH key should not be used under two different IP addresses simultaneously, otherwise it can no longer be used and will be revoked. Use the same session exclusively, or use different sessions, generating a separate TELEGREST_AUTH key for each application. 
 2. Due to anti-spam telegram policies, some accounts (reported ones, or new ones) cannot initiate a discussion sending a message to the person outside of contact list. Thus, Telegrest gateway will only be able to do as much as linked telegram account allowed to.
+3. Since the authentication feature is not there(at least for now), if you deploy the application as a sidecar container for some other app on the same host, feel free to restrict outside traffic to the application port(5001):
+
+.. code-block:: sh
+
+  sudo iptables -A INPUT -p tcp --dport 5001 -i lo -j ACCEPT
+  sudo iptables -A INPUT -p tcp --dport 5001 -j DROP
+
