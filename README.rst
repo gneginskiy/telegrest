@@ -27,7 +27,7 @@ Installing
 5. Then, telegram will send you a confirmation code. Enter your confirmation code as well.
 6. As an additional measure, telegram client can ask you for a password. Enter it as well.
 7. After you provided all the required information, the application will print your **TELEGREST_AUTH** string. Save it, you'll need it soon.
-8. Run the application from terminal/command line, providing the **auth string** you got during the previous step:
+8. Run the application from terminal/command line, providing the **TELEGREST_AUTH** string you got during the previous step:
 
 .. code-block:: sh
 
