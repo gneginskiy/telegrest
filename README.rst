@@ -90,3 +90,9 @@ To send text and files to "saved messages", just specify ``me`` as a username:
       "username":"me",
       "message":"reminder message for myself"
   }
+
+
+Important note 
+-----------
+1. The TELEGREST_AUTH key should not be used under two different IP addresses simultaneously, otherwise it can no longer be used and will be revoked. Use the same session exclusively, or use different sessions, generating a separate TELEGREST_AUTH key for each application. 
+2. Due to anti-spam telegram policies, some accounts (reported ones, or new ones) cannot initiate a discussion sending a message to the person outside of contact list. Thus, Telegrest gateway will only be able to do as much as linked telegram account allowed to.
