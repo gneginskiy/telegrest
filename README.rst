@@ -103,3 +103,11 @@ Important note
   sudo iptables -A INPUT -p tcp --dport 5001 -i lo -j ACCEPT
   sudo iptables -A INPUT -p tcp --dport 5001 -j DROP
 
+you can also run the app like this, it will restrict outside traffic as well:
+
+.. code-block:: sh
+
+  docker run \
+  -p 127.0.0.1:5001:5001 \
+  -e TELEGREST_AUTH=%YOUR_TELEGREST_AUTH_STRING_HERE% \
+  gneginskiy/telegrest:1.0
