@@ -111,3 +111,11 @@ you can also run the app like this, it will restrict outside traffic as well:
   -p 127.0.0.1:5001:5001 \
   -e TELEGREST_AUTH=%YOUR_TELEGREST_AUTH_STRING_HERE% \
   gneginskiy/telegrest:1.0
+
+4. As with any third-party library for Telegram, be careful not to break `Telegram's Terms of Service`_ or `Telegram can ban the account`_.
+
+
+
+.. _Telegram: https://telegram.org
+.. _Telegram's Terms of Service: https://core.telegram.org/api/terms
+.. _Telegram can ban the account: https://docs.telethon.dev/en/stable/quick-references/faq.html#my-account-was-deleted-limited-when-using-the-library
