@@ -26,14 +26,14 @@ Installing
 4. Enter you phone using international format (e.g. +79660354444)
 5. Then, telegram will send you a confirmation code. Enter your confirmation code as well.
 6. As an additional measure, telegram client can ask you for a password. Enter it as well.
-7. After you provided all the required information, the application will print **auth string**. Save it, you'll need it soon.
+7. After you provided all the required information, the application will print your **TELEGREST_AUTH** string. Save it, you'll need it soon.
 8. Run the application from terminal/command line, providing the **auth string** you got during the previous step:
 
 .. code-block:: sh
 
   docker run \
   -p 5001:5001 \
-  -e TELEGREST_AUTH=%YOUR_AUTH_STRING_HERE% \
+  -e TELEGREST_AUTH=%YOUR_TELEGREST_AUTH_STRING_HERE% \
   gneginskiy/telegrest:1.0
 
 9. Do not share your auth string with anybody.
